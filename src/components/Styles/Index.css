@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+
+}
+
+.iconos{
+    font-size: 80px;
+}
+
+.TextInfo p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
