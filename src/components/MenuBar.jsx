@@ -22,7 +22,16 @@ const Sidebar =( {children} )=> {
         path:"/productos",
         name:"Productos",
         icon: <FaBookmark/>
+        
       },
+
+      {
+        path:"/formulario",
+        name:"formulario",
+        icon: <FaBookmark/>
+        
+      },
+    
     ]
 
     
@@ -44,7 +53,7 @@ const Sidebar =( {children} )=> {
         {
 
             menuitem.map((item,index)=>(
-              <NavLink to={item.path} key={index} className="link" activeclassName="active">
+              <NavLink to={item.path} key={index} className="link" activeClassName ="active">
                 <div className='icon'> {item.icon} </div>
                 <div style={ {display: IsOpen? "block" : "none"} } className="link_text"> { item.name} </div>
 
